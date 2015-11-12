@@ -1,0 +1,21 @@
+NOTES
+
+okay, what is this package? swm is in the repos.
+
+this is NOT:
+
+1. a fork of swm
+
+2. any improvement over swm
+
+this IS:
+
+1. swm
+
+so.
+
+swm uses config.h for configuration. the void template for swm does not respect that, and just compiles it with the default config.h, allowing for no configuration.
+
+i fixed that.
+
+if you install this from my binary repo, this does absolutely nothing compared to the original. it's the same. if you compile it with xbps-src, it allows for pre-compilation configuration.

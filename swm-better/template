@@ -1,0 +1,22 @@
+# Template file for 'swm-better'
+pkgname=swm-better
+version=1.0
+wrksrc=swm-1.0
+revision=2
+makedepends="libxcb-devel"
+short_desc="A simple window manager"
+maintainer="arcetera <echo iue@trnspljc.890 | tr ietursnpl890jc acprlsurecomed>"
+license="Public Domain"
+homepage="https://github.com/dcat/swm"
+distfiles="https://github.com/dcat/swm/archive/v${version}.tar.gz"
+checksum=f0b9b3616f7499a0a7ba0c284e7905ba640626cdc93d33b83a6bcfb781fe1ad0
+
+do_build() {
+    cp ${FILESDIR}/config.h config.h
+	sed -i 's|^CFLAGS|#CFLAGS|g' Makefile
+	sed -i 's| -L/usr/X11R6/lib||g' Makefile
+	make CC=$CC
+}
+do_install() {
+	vbin swm
+}
