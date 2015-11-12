@@ -13,3 +13,7 @@ A collection of templates for Void Linux, to be used with xbps-src.
 USAGE
 
 Download xbps-src, and copy one of the desired template folders to srcpkgs. Look at xbps-src's documentation to learn how to use xbps-src.
+
+BINARIES
+
+Alternatively, you can use the binary repository (again, RTFM on how to use) http://arcetera.party/voidpkgs/
