@@ -1,0 +1,24 @@
+# Template file for 'wmutils-opt'
+pkgname=wmutils-opt
+version=00fb88f80f2c42cdd664dc678430e77587cd392c
+revision=1
+wrksrc="${pkgname##*-}-${version}"
+build_style=gnu-makefile
+makedepends="libxcb-devel unzip"
+short_desc="Set of window manipulation tools"
+maintainer="arcetera <echo iue@trnspljc.890 | tr ietursnpl890jc acprlsurecomed>"
+license="ISC"
+homepage="https://github.com/wmutils/opt"
+distfiles="https://github.com/wmutils/opt/archive/${version}.zip"
+checksum=e9199bdc0e6dd2874649a6325a85ca8f29c059ac156cd319b9dd678bacc15660
+
+LDFLAGS="-lxcb"
+
+pre_build() {
+	sed -i 's,/man,/share/man,' config.mk
+	sed -i 's|@$(LD)|@$(CC)|g' Makefile
+}
+
+post_install() {
+	vlicense LICENSE
+}
