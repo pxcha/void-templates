@@ -1,0 +1,16 @@
+# Template file for 'ixio'
+pkgname=ixio
+version=1.0
+revision=2
+build_style="fetch"
+depends="curl"
+short_desc="official ix.io client"
+maintainer="arcetera <echo iue@trnspljc.890 | tr ietursnpl890jc acprlsurecomed>"
+homepage="http://ix.io"
+distfiles="http://ix.io/client"
+license="???"
+checksum=a7f8ff373eedccb255ec7814c15b22c0dd56c42c783e8afe1f24601534d18275
+
+do_install() {
+        vbin client ix
+}
