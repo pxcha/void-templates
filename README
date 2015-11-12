@@ -16,4 +16,4 @@ Download xbps-src, and copy one of the desired template folders to srcpkgs. Look
 
 BINARIES
 
-Alternatively, you can use the binary repository (again, RTFM on how to use) http://arcetera.party/voidpkgs/
+Alternatively, you can use the binary repository. Manually download the packages from http://arcetera.party/voidpkgs, or (recommended) copy the "arcetera.conf" file to /etc/xbps.d/.
