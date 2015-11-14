@@ -1,0 +1,14 @@
+# Template file for 'rtv'
+
+pkgname=rtv
+version=1.6.1
+revision=1
+build_style="python-module"
+depends="python python3 python-setuptools python3.4-setuptools python-futures python-kitchen python-tornado python3.4-tornado"
+makedepends="python python3 python-setuptools python3.4-setuptools"
+short_desc="reddit terminal viewer"
+maintainer="arcetera <echo iue@trnspljc.890 | tr ietursnpl890jc acprlsurecomed>"
+license="MIT"
+homepage="https://github.com/michael-lazar/rtv"
+distfiles="https://github.com/michael-lazar/rtv/archive/v${version}.tar.gz"
+checksum="7b211c8b625862d4a50e7cd9b8f9adb04c7f46e04539e0d6c73585a4ef29d883"

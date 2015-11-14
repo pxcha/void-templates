@@ -1,0 +1,15 @@
+# Template file for 'python-update_checker"
+
+pkgname=python-update_checker
+version=0.11
+wrksrc="update_checker-${version}"
+revision=1
+build_style="python-module"
+depends="python python3 python-setuptools python3.4-setuptools"
+makedepends="python python3 python-setuptools python3.4-setuptools"
+short_desc="update checker python module"
+maintainer="arcetera <echo iue@trnspljc.890 | tr ietursnpl890jc acprlsurecomed>"
+license="Simplified BSD"
+homepage="https://pypi.python.org/pypi/update_checker"
+distfiles="https://pypi.python.org/packages/source/u/update_checker/update_checker-${version}.tar.gz"
+checksum="681bc7c26cffd1564eb6f0f3170d975a31c2a9f2224a32f80fe954232b86f173"

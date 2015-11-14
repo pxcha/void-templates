@@ -1,0 +1,15 @@
+# Template file for 'python-praw'
+
+pkgname=python-praw
+version=3.3.0
+revision=1
+build_style="python-module"
+wrksrc="praw-${version}"
+depends="python python3 python-setuptools python3.4-setuptools"
+makedepends="python python3 python-setuptools python3.4-setuptools"
+short_desc="The Python Reddit API Wrapper"
+maintainer="arcetera <echo iue@trnspljc.890 | tr ietursnpl890jc acprlsurecomed>"
+license="GPL-3"
+homepage="https://github.com/praw-dev/praw"
+distfiles="https://github.com/praw-dev/praw/archive/v${version}.tar.gz"
+checksum="7434c1dcdd28bf01d75364bf12e5d38620e38a168d311921a295321f8fb5c2e0"

@@ -1,0 +1,15 @@
+# Template file for 'python-kitchen'
+
+pkgname=python-kitchen
+version=1.2.4
+revision=1
+build_style="python-module"
+depends="python python3 python-setuptools python3.4-setuptools"
+makedepends="python python3 python-setuptools python3.4-setuptools"
+short_desc="Useful snippets of python code"
+maintainer="arcetera <echo iue@trnspljc.890 | tr ietursnpl890jc acprlsurecomed>"
+license="LGPL-2"
+homepage="https://github.com/fedora-infra/kitchen"
+distfiles="https://github.com/fedora-infra/kitchen/archive/${version}.tar.gz"
+checksum="8a23652c4f35efc67ecfee47182290145abe66431218d9cd0ed2c0c598457df9"
+wrksrc="kitchen-${version}"
