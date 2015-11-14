@@ -16,4 +16,4 @@ Download xbps-src, and copy one of the desired template folders to srcpkgs. Look
 
 BINARIES
 
-Alternatively, you can use the binary repository. Manually download the packages from http://arcetera.party/voidpkgs, or (recommended) copy the "arcetera.conf" file to /etc/xbps.d/.
+Alternatively, you can use the binary repository. Manually download the packages from http://arcetera.party/voidpkgs, or (recommended) copy "00-u202e.conf" to /etc/xbps.d/.
