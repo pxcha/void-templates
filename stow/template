@@ -1,0 +1,14 @@
+# Template file for 'stow'
+
+pkgname=stow
+version=2.2.2
+revision=2
+build_style="gnu-configure"
+depends="perl"
+makedepends="perl"
+short_desc="symlink farm manager"
+maintainer="arcetera <echo iue@trnspljc.890 | tr ietursnpl890jc acprlsurecomed>"
+license="GPL-3"
+homepage="https://www.gnu.org/software/stow/"
+distfiles="http://ftp.gnu.org/gnu/stow/stow-${version}.tar.gz"
+checksum=e2f77649301b215b9adbc2f074523bedebad366812690b9dc94457af5cf273df
