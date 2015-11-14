@@ -1,0 +1,45 @@
+# Template file for 'google_appengine'
+
+pkgname=google_appengine
+version=1.9.28
+revision=1
+depends="python"
+makedepends="unzip"
+short_desc="Google App Engine Python SDK"
+maintainer="arcetera <echo iue@trnspljc.890 | tr ietursnpl890jc acprlsurecomed>"
+license="Apache"
+homepage="https://cloud.google.com/appengine/"
+distfiles="https://storage.googleapis.com/appengine-sdks/featured/google_appengine_${version}.zip"
+wrksrc="google_appengine"
+checksum=8a015e2ffcd08aa0e65848dcc495838c63566db44b0cffedf1e1eb93d7f51bf3
+
+do_install() {
+        vmkdir /opt/google-appengine-python
+        vcopy api_server.py /opt/google-appengine-python
+        vcopy appcfg.py /opt/google-appengine-python
+        vcopy backends_conversion.py /opt/google-appengine-python
+        vcopy bulkload_client.py /opt/google-appengine-python
+        vcopy bulkloader.py /opt/google-appengine-python
+        vcopy dev_appserver.py /opt/google-appengine-python
+        vcopy download_appstats.py /opt/google-appengine-python
+        vcopy endpointscfg.py /opt/google-appengine-python
+        vcopy gen_protorpc.py /opt/google-appengine-python
+        vcopy google_sql.py /opt/google-appengine-python
+        vcopy php_cli.py /opt/google-appengine-python
+        vcopy _php_runtime.py /opt/google-appengine-python
+        vcopy _python_runtime.py /opt/google-appengine-python
+        vcopy remote_api_shell.py /opt/google-appengine-python
+        vcopy run_tests.py /opt/google-appengine-python
+        vcopy wrapper_util.py /opt/google-appengine-python
+        vcopy demos /opt/google-appengine-python
+        vcopy google /opt/google-appengine-python
+        vcopy lib /opt/google-appengine-python
+        vcopy new_project_template /opt/google-appengine-python
+        vcopy php /opt/google-appengine-python
+        vcopy tools /opt/google-appengine-python
+        vcopy BUGS /opt/google-appengine-python
+        vcopy README /opt/google-appengine-python
+        vcopy RELEASE_NOTES /opt/google-appengine-python
+        vcopy VERSION /opt/google-appengine-python
+        vlicense LICENSE
+}
