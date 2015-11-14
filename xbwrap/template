@@ -1,0 +1,17 @@
+# Template file for 'xbwrap'
+
+pkgname=xbwrap
+version=1.0.1
+revision=2
+depends="bash"
+short_desc="Simple X Binary Package System wrapper"
+maintainer="arcetera <echo iue@trnspljc.890 | tr ietursnpl890jc acprlsurecomed>"
+license="BSD"
+homepage="https://github.com/u202e/xbwrap"
+distfiles="https://github.com/u202e/xbwrap/archive/${version}.tar.gz"
+checksum=27a4f6bbd7df5d5e782f1e0ff04de5032ad98368eb96cc97855f994b497123db
+
+do_install() {
+        vbin xbps
+        vman xbwrap.1
+}
