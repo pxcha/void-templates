@@ -1,0 +1,14 @@
+# Template file for 'pipes'
+
+pkgname=pipes
+version=1.1.0
+revision=2
+build_style="gnu-makefile"
+wrksrc="pipes.sh-${version}"
+depends="bash"
+short_desc="Animated pipes terminal screensaver"
+maintainer="arcetera <echo iue@trnspljc.890 | tr ietursnpl890jc acprlsurecomed>"
+license="MIT"
+homepage="https://github.com/pipeseroni/pipes.sh"
+distfiles="https://github.com/pipeseroni/pipes.sh/archive/v${version}.tar.gz"
+checksum="829f0815f0721453833942c8da28bf02845bfef9f844373d9ed67d5017a54588"
