@@ -17,4 +17,6 @@ Download xbps-src, and copy one of the desired template folders to srcpkgs. Look
 
 BINARIES
 
-Alternatively, you can use the binary repository. Manually download the packages from http://arcetera.party/voidpkgs, or (recommended) copy "00-u202e.conf" to /etc/xbps.d/.
+Alternatively, you can use the binary repository. Manually download the packages from http://pacha.pw/u202e/voidpkgs, or (recommended) copy "00-u202e.conf" to /etc/xbps.d/.
+
+Note that there is a one-week timeout for the old location, http://arcetera.party/voidpkgs. On October 21, the old repo will be deleted, so transition.
