@@ -1,0 +1,23 @@
+# Template file for 'urnn'
+pkgname=urnn
+version=5a9e43e20ce744672a98ef1c00683fb8c4583a12
+revision=1
+wrksrc="${pkgname##*-}-${version}"
+build_style=gnu-makefile
+makedepends="unzip fann-devel libpng-devel"
+depends="fann libpng"
+short_desc="A neural network to smartly create coherent terminal colorschemes based on an image."
+maintainer="sshdw <sshdw0 at gmail dot com>"
+license="???"
+homepage="https://github.com/nixers-projects/urnn"
+distfiles="https://github.com/nixers-projects/urnn/archive/${version}.zip"
+checksum=3472d3c6e24f1492116ede16efbd98bb54fb9d389038efe128cd8fc5de2125ee
+
+do_build() {
+        ./setup.sh
+}
+
+do_install() {
+        vbin urnn.sh urnn
+}
+
