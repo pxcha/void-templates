@@ -1,0 +1,22 @@
+# Template file for 'i3-gaps-git'
+pkgname=i3-gaps-git 
+version=4.11
+revision=1
+build_style=gnu-makefile
+hostmakedepends="pkg-config perl"
+makedepends="pcre-devel yajl-devel libxcb-devel libev-devel
+ pango-devel startup-notification-devel libxkbcommon-devel
+ xcb-util-keysyms-devel xcb-util-wm-devel xcb-util-cursor-devel unzip git"
+short_desc="Improved tiling window manager"
+maintainer="ian c. <ian@airmail.cc>"
+license="BSD"
+homepage="https://github.com/Airblader/i3"
+
+provides="i3-${version}_${revision}"
+replaces="i3>=0"
+
+do_fetch() {
+        local url="git://github.com/Airblader/i3.git"
+        msg_normal "Fetching source from $url ...\n"
+        git clone ${url} ${pkgname}-${version}
+}
